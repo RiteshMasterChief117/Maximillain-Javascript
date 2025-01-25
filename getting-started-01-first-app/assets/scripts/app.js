@@ -7,7 +7,7 @@ function toggleBackdrop() {
 }
 
 function presentInfoModal(event) {
-  const text = event.target.dataset.text;
+  const {text} = event.target.dataset.text;
   toggleBackdrop();
   infoModal = document.createElement('div');
   infoModal.classList.add('modal');
